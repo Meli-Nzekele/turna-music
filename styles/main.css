@@ -21,9 +21,13 @@ body {
     font-family: var(--main-font);
 }
 
+main {
+    margin: 0px 0 250px;
+}
+
 li {
     list-style-type: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a {
@@ -33,7 +37,7 @@ a {
 
 img {
     width: 35%;
-    margin: 130px 30px 0;
+    margin: -600px 20px 0;
 }
 
 .menu ul {
@@ -55,9 +59,12 @@ img {
 
 .socials ul {
     display: flex;
-    flex-direction: column;
-    gap:10px;
-    margin-top: 180px;
+    flex-direction: row;
+    gap:20px;
+}
+
+.socials li {
+    font-size: 24px;
 }
 
 .fa-spotify:hover {
@@ -106,38 +113,67 @@ img {
 }
 
 iframe {
+    width: 600px;
+}
+
+.spotify-iframe, .soundcloud-iframe {
     display: flex;
-    justify-content: right;
-    margin-left: 100px;
-    width: 40%;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer-i, .footer-c {
+    margin-top: 680px;
+
+}
+
+.footer-s {
+    margin-top: -50px;
+
 }
 
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 
-    .menu ul { 
+    li {
+        font-size: 14px;
+    } 
+
+    img {
+visibility: hidden;
+    }
+
+    .menu ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-right: 80px;
+        align-items: center;
+        max-width: 175px;
     }
-
-    .menu li {
-        font-size: 14px;
-    }
+    
 
     .socials ul {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        margin-right: 35px;
+        gap:20px;
     }
 
-    img {
-        width: 60%; 
+    .socials li {
+        font-size: 18px;
     }
 
-    iframe {
-        width:auto;
+
+   .soundcloud-iframe {
+        margin: 100px 20px 0;
     }
+
+    .footer-i, .footer-c {
+        margin-top: 525px;
+    
+    }
+
+    .footer-s {
+        margin-top: -125px;
+    }
+
 }
